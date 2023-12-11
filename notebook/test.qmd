@@ -1,0 +1,29 @@
+---
+title: "Test"
+author: "Me"
+date: today
+format: 
+  html:
+    code-fold: false
+    embed-resources: true
+    highlight-style: github
+    toc: true 
+    code-line-numbers: false 
+bibliography: references.bib
+---
+
+Citation inline from @korsunsky2019. Citation with parentheses [@haghverdi2018].
+
+![Figure caption](../images/integrated_data_picture.png){width=80% #fig-integrated}
+
+This refers to @fig-integrated. Does it work?
+
+
+```{r}
+#| label: fig-hist
+#| fig-cap: "A simple histogram of 30 random values."
+hist(rnorm(30))
+```
+
+I can also refer to my plot output @fig-hist.
+
